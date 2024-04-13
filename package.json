@@ -1,0 +1,27 @@
+{
+  "name": "songui",
+  "version": "1.0.0",
+  "description": "songui api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only src/server.ts",
+    "db:migrate": "npx knex migrate:make",
+    "db:migrate:run": "npx knex migrate:latest"
+  },
+  "keywords": [],
+  "author": "Guilherme Sofiati Fantin",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "pg": "^8.11.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
